@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes</title>
+</head>
+<body>
+
+<h1 class="text-center">Clientes</h1>
+
+<div id="mensagemView"></div>
+
+<form class="form">
+
+    <div class="form-group">
+        <label for="nomecliente">Nome</label>
+        <input type="text" min="1" step="1" id="nomecliente" class="form-control" required/>
+    </div>
+
+    <div class="form-group">
+        <label for="cpf">Cpf</label>
+        <input id="cpf" type="text" class="form-control" min="1" step="1" required/>
+    </div>
+
+    <button class="btn btn-primary" type="submit" onclick="clienteController.inserir(event)">Inserir</button>
+</form>
+
+<br>
+<br>
+
+<table>
+    <thead>
+    <tr>
+        <th>NOME</th>
+        <th>CPF</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+
+    <tfoot>
+    </tfoot>
+</table>
+
+<script src="js/model/cliente.js"></script>
+<script src="js/model/clienteEspecial.js"></script>
+<script src="js/model/clientes.js"></script>
+<script src="js/controller/clienteController.js"></script>
+<script src="js/script-cliente.js"></script>
+</body>
+</html>
